@@ -31,7 +31,8 @@ const About = () => {
                         <p><span className="font-bold">Frontend: </span>HTML5, CSS3, Tailwind.css, React.js.</p>
                         <p><span className="font-bold">Backend: </span>Node.js, Express.js.</p>
                         <p><span className="font-bold">Database: </span>MongoDB.</p>
-                        <p><span className="font-bold">Others: </span>Firebase, JWT, Git & Github, Data Structures and Algorithms, Problem solving, Basic OOP.</p>
+                        <p><span className="font-bold">Other Technical Expertise: </span>Firebase, JWT, Git & Github, Data Structures and Algorithms, Basic OOP.</p>
+                        <p><span className="font-bold">Interpersonal: </span>Problem solving, Attention to Details, Teamwork.</p>
                     </div>
                 </div>
                 {/* Experience */}

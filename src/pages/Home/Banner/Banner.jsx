@@ -15,6 +15,7 @@ import firebase from '../../../assets/icons/firebase.png'
 import node from '../../../assets/icons/node.png'
 import express from '../../../assets/icons/express.png'
 import mongo from '../../../assets/icons/mdb.png'
+import { Link } from 'react-router-dom';
 
 
 const Banner = () => {
@@ -36,7 +37,8 @@ const Banner = () => {
                     />
                 </span>
                 </p>
-                <div className='w-4/5 md:w-3/5 mx-auto pr-2'>
+
+                <div className='w-4/5 md:w-3/5 mx-auto pr-5'>
                     <Marquee>
                         <img className='w-6 md:w-8 ml-10' src={c} alt="c" />
                         <img className='w-6 md:w-8 ml-10' src={cpp} alt="cpp" />
@@ -51,7 +53,10 @@ const Banner = () => {
                         <img className='w-6 md:w-8 ml-10' src={mongo} alt="mongodb" />
                     </Marquee>
                 </div>
-
+                <div className='space-x-2 pt-3 w-full text-center mr-8 md:mr-2'>
+                    <a href="/resume-nahid.pdf" download="resume-nahid.pdf"><button className="btn btn-sm btn-outline  text-sky-400 hover:text-white hover:border-sky-400">Download Resume</button></a>
+                    <button className="btn btn-sm btn-outline  text-sky-400 hover:text-white hover:border-sky-400">Contact Now</button>
+                </div>
             </div>
         </div>
     );
