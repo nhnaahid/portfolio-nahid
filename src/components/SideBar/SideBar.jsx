@@ -28,34 +28,34 @@ const SideBar = () => {
                         <h2 className="text-xl font-semibold">Nazmul Hassan Nahid</h2>
                     </div>
                     <div className="w-full flex flex-wrap justify-center gap-3 text-lg mt-1">
-                        <a className="rounded-full bg-gray-800 hover:bg-sky-600 p-2" href="https://x.com/?lang=en"><FaGithub /></a>
-                        <a className="rounded-full bg-gray-800 hover:bg-sky-600 p-2" href="https://x.com/?lang=en"><FaLinkedin /></a>
-                        <a className="rounded-full bg-gray-800 hover:bg-sky-600 p-2" href="https://www.facebook.com/"><FaFacebook></FaFacebook></a>
-                        <a className="rounded-full bg-gray-800 hover:bg-sky-600 p-2" href="https://www.instagram.com/"><SiDailydotdev /></a>
+                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://x.com/?lang=en"><FaGithub /></a>
+                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://x.com/?lang=en"><FaLinkedin /></a>
+                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.facebook.com/"><FaFacebook></FaFacebook></a>
+                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.instagram.com/"><SiDailydotdev /></a>
                     </div>
                     <div className="pt-7">
                         <ul className="px-5 space-y-5">
-                            <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <IoHomeOutline />
                                 <p>Home</p>
                             </li>
-                            <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <CiUser />
                                 <p>About</p>
                             </li>
-                            <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <PiGraduationCap className="text-xl" />
                                 <p>Education</p>
                             </li>
-                            <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <IoSettingsOutline className="text-xl" />
                                 <p>Skills</p>
                             </li>
-                            <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <GoProjectRoadmap />
                                 <p>Projects</p>
                             </li>
-                            <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <TfiEmail />
                                 <p>Contact</p>
                             </li>
@@ -74,34 +74,34 @@ const SideBar = () => {
                     <h2 className="text-xl font-semibold">Nazmul Hassan Nahid</h2>
                 </div>
                 <div className="flex flex-wrap justify-center gap-3 text-lg">
-                    <a className="rounded-full bg-gray-800 hover:bg-sky-700 p-2" href="https://x.com/?lang=en"><FaGithub /></a>
-                    <a className="rounded-full bg-gray-800 hover:bg-sky-700 p-2" href="https://x.com/?lang=en"><FaLinkedin /></a>
-                    <a className="rounded-full bg-gray-800 hover:bg-sky-700 p-2" href="https://www.facebook.com/"><FaFacebook></FaFacebook></a>
-                    <a className="rounded-full bg-gray-800 hover:bg-sky-700 p-2" href="https://www.instagram.com/"><SiDailydotdev /></a>
+                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://x.com/?lang=en"><FaGithub /></a>
+                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://x.com/?lang=en"><FaLinkedin /></a>
+                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.facebook.com/"><FaFacebook></FaFacebook></a>
+                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.instagram.com/"><SiDailydotdev /></a>
                 </div>
                 <div className="pt-7">
                     <ul className="px-5 space-y-5">
-                        <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                        <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                             <IoHomeOutline className="text-lg" />
                             <p>Home</p>
                         </li>
-                        <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                        <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                             <CiUser className="text-xl" />
                             <p>About</p>
                         </li>
-                        <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                        <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                             <PiGraduationCap className="text-xl" />
                             <p>Education</p>
                         </li>
-                        <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                        <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                             <IoSettingsOutline className="text-xl" />
                             <p>Skills</p>
                         </li>
-                        <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                        <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                             <GoProjectRoadmap className="text-lg" />
                             <p>Projects</p>
                         </li>
-                        <li className="flex items-center gap-2 hover:text-sky-500 cursor-pointer">
+                        <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                             <TfiEmail className="text-lg" />
                             <p>Contact</p>
                         </li>
