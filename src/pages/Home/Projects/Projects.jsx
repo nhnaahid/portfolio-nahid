@@ -2,6 +2,21 @@ import skillup from '../../../assets/projects/skillup.png'
 import alter from '../../../assets/projects/alterwhite.png'
 import krafti from '../../../assets/projects/krafti.png'
 import { GoArrowUpRight } from 'react-icons/go';
+import su1 from '../../../assets/pages/SkillUp-Home.png'
+import su2 from '../../../assets/pages/SkillUp-popular.png'
+import su3 from '../../../assets/pages/SkillUp-feedback.png'
+import su4 from '../../../assets/pages/SkillUp-Course-Details.png'
+import su5 from '../../../assets/pages/SkillUp-Teacher-Courses.png'
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { TbWorld } from 'react-icons/tb';
+import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { BiLogoGithub } from 'react-icons/bi';
 
 const Projects = () => {
     return (
@@ -16,11 +31,79 @@ const Projects = () => {
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-sky-700 to-sky-100 opacity-90 text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 h-full">
                         <div className='flex flex-col items-center justify-center w-full h-full space-y-1'>
                             <h2 className='text-black font-bold font-merri text-center text-2xl'>SkillUp</h2>
-                            <p className='text-black font-bold font-merri text-center pb-2'>Online Educational Course Management System</p>
-                            <GoArrowUpRight className='text-center text-4xl bg-sky-700 rounded-full p-1 cursor-pointer hover:bg-sky-300 hover:text-black duration-300'/>
+                            <p className='text-black font-bold font-merri text-center pb-2'>Web Application For Educational Course Management System</p>
+                            <button onClick={() => document.getElementById('my_modal_1').showModal()}><GoArrowUpRight className='text-center text-4xl bg-sky-700 rounded-full p-1 cursor-pointer hover:bg-sky-300 hover:text-black duration-500' /></button>
                         </div>
-
                     </div>
+                    <dialog id="my_modal_1" className="modal">
+                        <div className="modal-box w-11/12 max-w-3xl">
+                            <form method="dialog">
+                                {/* if there is a button in form, it will close the modal */}
+                                <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                            </form>
+                            <div className='border-b pb-1 space-y-1'>
+                                <h1 className='font-merri font-bold text-2xl'>SkillUp</h1>
+                                <p>Web Application For Educational Course Management System.</p>
+                                <div className='flex gap-2 text-3xl items-center'>
+                                    <Link className='tooltip' data-tip="Live Site" to="https://skillup-57533.web.app/"><TbWorld className='hover:text-sky-500 duration-300' /></Link>
+                                    <Link className='tooltip' data-tip="Client Repo" to="https://github.com/nhnaahid/skillup-client"><BiLogoGithub className='hover:text-sky-500 duration-300' /></Link>
+                                    <Link className='tooltip' data-tip="Server Repo" to="https://github.com/nhnaahid/skillup-server"><BiLogoGithub className='hover:text-sky-500 duration-300' /></Link>
+                                </div>
+                            </div>
+                            <div>
+                                {/* sliders */}
+                                <div className='mt-5'>
+                                    <Swiper
+                                        spaceBetween={30}
+                                        centeredSlides={true}
+                                        autoplay={{
+                                            delay: 2500,
+                                            disableOnInteraction: false,
+                                        }}
+                                        pagination={{
+                                            clickable: true,
+                                        }}
+                                        navigation={true}
+                                        modules={[Autoplay, Pagination, Navigation]}
+                                        className="mySwiper"
+                                    >
+                                        <SwiperSlide><img src={su1} alt="SkillUp pages" /></SwiperSlide>
+                                        <SwiperSlide><img src={su2} alt="SkillUp pages" /></SwiperSlide>
+                                        <SwiperSlide><img src={su3} alt="SkillUp pages" /></SwiperSlide>
+                                        <SwiperSlide><img src={su4} alt="SkillUp pages" /></SwiperSlide>
+                                        <SwiperSlide><img src={su5} alt="SkillUp pages" /></SwiperSlide>
+                                    </Swiper>
+                                </div>
+                                {/* details */}
+                                <div className='space-y-5 mt-5'>
+                                    <div className='space-y-2'>
+                                        <h2 className='text-xl font-bold font-merri text-sky-600'>Project Overview</h2>
+                                        <p className='mt-2'>SkillUp is an online learning and educational course management platform.Here teachers can add courses, students can browse and enroll in courses, and make payments through Stripe. Teachers can provide assignments for a course and students have to submit the assignment before the deadline. Admin can manage all the user's behavior. Separate dashboards for admin, teacher, and student will help to keep their functionalities separate.</p>
+                                    </div>
+                                    <div>
+                                        <h2 className='text-xl font-bold font-merri text-sky-600'>Key Features</h2>
+                                        <ul className="list-disc list-inside mt-2">
+                                            <li>Firebase Authentication.</li>
+                                            <li>MongoDB CRUD Operations.</li>
+                                            <li>JSON Web Token (JWT) Security.</li>
+                                            <li>Payment Gateway - Stripe</li>
+                                            <li>Responsive Design.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 className='text-xl font-bold font-merri text-sky-600'>Tech Stack</h2>
+                                        <div className='mt-2'>
+                                            <p><span className="font-bold">Frontend: </span>Tailwind.css, React.js.</p>
+                                            <p><span className="font-bold">Backend: </span>Node.js, Express.js.</p>
+                                            <p><span className="font-bold">Database: </span>MongoDB.</p>
+                                            <p><span className="font-bold">Tools and Packages: </span>Firebase, JWT, Stripe, Axios, React Hook Form.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
                 {/* alterwhite */}
                 <div className="relative group h-64 bg-white shadow-lg rounded-lg overflow-hidden">
@@ -28,8 +111,22 @@ const Projects = () => {
                         <img className='w-full h-full object-cover' src={alter} alt="" />
                     </div>
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-sky-700 to-sky-100 opacity-90 text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 h-full">
-                        <p className='text-blue-900 font-bold font-merri'>AlterWhite</p>
+                        <div className='flex flex-col items-center justify-center w-full h-full space-y-1'>
+                            <h2 className='text-black font-bold font-merri text-center text-2xl'>AlterWhite</h2>
+                            <p className='text-black font-bold font-merri text-center pb-2'>Web Application For Alternative Product Information System</p>
+                            <button onClick={() => document.getElementById('my_modal_2').showModal()}><GoArrowUpRight className='text-center text-4xl bg-sky-700 rounded-full p-1 cursor-pointer hover:bg-sky-300 hover:text-black duration-500' /></button>
+                        </div>
                     </div>
+                    <dialog id="my_modal_2" className="modal">
+                        <div className="modal-box">
+                            <form method="dialog">
+                                {/* if there is a button in form, it will close the modal */}
+                                <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                            </form>
+                            <h3 className="font-bold text-lg">Hello!</h3>
+                            <p className="py-4">Press ESC key or click on ✕ button to close</p>
+                        </div>
+                    </dialog>
                 </div>
                 {/* krafti */}
                 <div className="relative group h-64 bg-white shadow-lg rounded-lg overflow-hidden">
@@ -37,8 +134,22 @@ const Projects = () => {
                         <img className='w-full h-full object-cover' src={krafti} alt="" />
                     </div>
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-sky-700 to-sky-100 opacity-90 text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 h-full">
-                        <p className='text-blue-900 font-bold font-merri'>Krafti</p>
+                        <div className='flex flex-col items-center justify-center w-full h-full space-y-1'>
+                            <h2 className='text-black font-bold font-merri text-center text-2xl'>Krafti</h2>
+                            <p className='text-black font-bold font-merri text-center pb-2'>Web Application For Wood & Jute Crafts Store.</p>
+                            <button onClick={() => document.getElementById('my_modal_3').showModal()}><GoArrowUpRight className='text-center text-4xl bg-sky-700 rounded-full p-1 cursor-pointer hover:bg-sky-300 hover:text-black duration-500' /></button>
+                        </div>
                     </div>
+                    <dialog id="my_modal_3" className="modal">
+                        <div className="modal-box">
+                            <form method="dialog">
+                                {/* if there is a button in form, it will close the modal */}
+                                <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                            </form>
+                            <h3 className="font-bold text-lg">Hello!</h3>
+                            <p className="py-4">Press ESC key or click on ✕ button to close</p>
+                        </div>
+                    </dialog>
                 </div>
             </div>
         </div>
