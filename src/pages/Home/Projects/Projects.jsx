@@ -264,7 +264,6 @@ const Projects = () => {
                                             <p><span className="font-bold">Database: </span>MongoDB.</p>
                                             <p><span className="font-bold">Tools and Packages: </span>Firebase, Swiper slider, React Awesome reveal</p>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
