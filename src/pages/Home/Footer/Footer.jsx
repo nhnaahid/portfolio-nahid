@@ -3,7 +3,7 @@ import { SiDailydotdev } from "react-icons/si";
 
 const Footer = () => {
     return (
-        <div className="bg-black pt-7 w-full px-2 font-mont">
+        <div className="bg-black pt-7 w-full px-2 font-mont mt-12">
             <p className="text-sky-300 font-bold font-merri text-2xl lg:text-3xl text-center">NahidPortfolio</p>
             <div className="flex flex-wrap justify-center gap-3 text-lg mt-4">
                 <a className="rounded-full bg-white hover:bg-sky-500 p-2 hover:text-white duration-300" href="https://github.com/nhnaahid"><FaGithub /></a>

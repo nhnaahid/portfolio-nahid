@@ -22,7 +22,7 @@ const SideBar = () => {
 
     return (
         <div className="font-mont font-semibold">
-            <div onClick={() => setOpen(!open)} className="flex justify-end md:hidden fixed w-full pt-3 z-50">
+            <div onClick={() => setOpen(!open)} className="flex justify-end md:hidden fixed w-full pt-3 pr-2 z-50">
                 {
                     open ? <RxCross1 className="text-4xl rounded-full p-2 bg-sky-500 text-gray-200" /> : <RiMenu3Fill className="text-4xl rounded-full p-2 bg-sky-500 text-gray-200" />
                 }
