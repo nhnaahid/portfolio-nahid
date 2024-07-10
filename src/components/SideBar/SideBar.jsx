@@ -13,11 +13,10 @@ import { PiGraduationCap } from "react-icons/pi";
 const SideBar = () => {
     const [open, setOpen] = useState(false);
 
-    function scrollToSection(text) {
-        var targetSection = document.getElementById(text);
-
+    const scrollToSection = (text) => {
+        const targetSection = document.getElementById(text);
         if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' });
+            targetSection.scrollIntoView({ behavior: "smooth" });
         }
     }
 
@@ -37,34 +36,34 @@ const SideBar = () => {
                         <h2 className="text-xl font-semibold">Nazmul Hassan Nahid</h2>
                     </div>
                     <div className="w-full flex flex-wrap justify-center gap-3 text-lg mt-1">
-                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://x.com/?lang=en"><FaGithub /></a>
-                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://x.com/?lang=en"><FaLinkedin /></a>
-                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.facebook.com/"><FaFacebook></FaFacebook></a>
-                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.instagram.com/"><SiDailydotdev /></a>
+                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://github.com/nhnaahid"><FaGithub /></a>
+                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.linkedin.com/in/nahidiu45/"><FaLinkedin /></a>
+                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.facebook.com/nazmulhasan.nahid.395/"><FaFacebook></FaFacebook></a>
+                        <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://app.daily.dev/nhnaahid"><SiDailydotdev /></a>
                     </div>
                     <div className="pt-7">
                         <ul className="px-5 space-y-5">
-                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
+                            <li onClick={() => scrollToSection("home")} className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <IoHomeOutline />
                                 <p>Home</p>
                             </li>
-                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
+                            <li onClick={() => scrollToSection("about")} className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <CiUser />
                                 <p>About</p>
                             </li>
-                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
+                            <li onClick={() => scrollToSection("education")} className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <PiGraduationCap className="text-xl" />
                                 <p>Education</p>
                             </li>
-                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
+                            <li onClick={() => scrollToSection("skills")} className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <IoSettingsOutline className="text-xl" />
                                 <p>Skills</p>
                             </li>
-                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
+                            <li onClick={() => scrollToSection("projects")} className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <GoProjectRoadmap />
                                 <p>Projects</p>
                             </li>
-                            <li className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
+                            <li onClick={() => scrollToSection("contact")} className="flex items-center gap-2 hover:text-sky-500 duration-300 cursor-pointer">
                                 <TfiEmail />
                                 <p>Contact</p>
                             </li>
@@ -83,10 +82,10 @@ const SideBar = () => {
                     <h2 className="text-xl font-semibold">Nazmul Hassan Nahid</h2>
                 </div>
                 <div className="flex flex-wrap justify-center gap-3 text-lg">
-                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://x.com/?lang=en"><FaGithub /></a>
-                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://x.com/?lang=en"><FaLinkedin /></a>
-                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.facebook.com/"><FaFacebook></FaFacebook></a>
-                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.instagram.com/"><SiDailydotdev /></a>
+                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://github.com/nhnaahid"><FaGithub /></a>
+                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.linkedin.com/in/nahidiu45/"><FaLinkedin /></a>
+                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://www.facebook.com/nazmulhasan.nahid.395/"><FaFacebook></FaFacebook></a>
+                    <a className="rounded-full bg-gray-800 hover:bg-sky-500 p-2 duration-300" href="https://app.daily.dev/nhnaahid"><SiDailydotdev /></a>
                 </div>
                 <div className="pt-7">
                     <ul className="px-5 space-y-5">

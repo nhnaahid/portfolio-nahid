@@ -44,10 +44,10 @@ const Contact = () => {
                 </div>
 
                 <div className="w-full flex flex-wrap justify-start gap-3 text-lg mt-5 lg:mt-7">
-                    <a className="rounded-full bg-white hover:bg-sky-500 p-2 hover:text-white duration-300" href="https://x.com/?lang=en"><FaGithub /></a>
-                    <a className="rounded-full bg-white hover:bg-sky-500 hover:text-white p-2 duration-300" href="https://x.com/?lang=en"><FaLinkedin /></a>
-                    <a className="rounded-full bg-white hover:bg-sky-500 hover:text-white p-2 duration-300" href="https://www.facebook.com/"><FaFacebook></FaFacebook></a>
-                    <a className="rounded-full bg-white hover:bg-sky-500 hover:text-white p-2 duration-300" href="https://www.instagram.com/"><SiDailydotdev /></a>
+                    <a className="rounded-full bg-white hover:bg-sky-500 p-2 hover:text-white duration-300" href="https://github.com/nhnaahid"><FaGithub /></a>
+                    <a className="rounded-full bg-white hover:bg-sky-500 hover:text-white p-2 duration-300" href="https://www.linkedin.com/in/nahidiu45/"><FaLinkedin /></a>
+                    <a className="rounded-full bg-white hover:bg-sky-500 hover:text-white p-2 duration-300" href="https://www.facebook.com/nazmulhasan.nahid.395/"><FaFacebook></FaFacebook></a>
+                    <a className="rounded-full bg-white hover:bg-sky-500 hover:text-white p-2 duration-300" href="https://app.daily.dev/nhnaahid"><SiDailydotdev /></a>
                 </div>
                 <a href="/resume-nahid.pdf" download="resume-nahid.pdf"><button className="mt-5 lg:mt-7 btn btn-sm btn-outline text-xs text-sky-600 lg:font-bold hover:text-white hover:bg-gradient-to-r from-sky-900 to-sky-400 hover:border-none duration-500">Download Resume</button></a>
             </div>
