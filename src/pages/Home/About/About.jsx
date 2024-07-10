@@ -1,12 +1,12 @@
 
 const About = () => {
     return (
-        <div className='p-2 md:p-5 font-mont text-black space-y-5'>
+        <div id="about" className='p-2 md:p-5 font-mont text-black space-y-5'>
             <h1 className="w-fit text-3xl font-bold border-b-2 border-sky-500 font-merri">About</h1>
             <p >A motivated CSE graduate equipped with a solid foundation in computer science principles and practical skills acquired through competitive programming, academic, and personal projects, and comprehensive training on web development. I am now seeking a position as a software engineer in a challenging environment to make the best use of my skills with continuous learning opportunities. </p>
             <div className='grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-3 justify-between items-center'>
                 {/* education */}
-                <div className='rounded-xl p-3 space-y-5 h-full bg-base-200 hover:shadow-xl hover:shadow-sky-200 duration-500'>
+                <div id="education" className='rounded-xl p-3 space-y-5 h-full bg-base-200 hover:shadow-xl hover:shadow-sky-200 duration-500'>
                     <h2 className="font-merri font-bold text-xl text-sky-500">Education</h2>
                     <div>
                         <p className="font-bold">M. Sc. | 2021 – 2022</p>
@@ -24,7 +24,7 @@ const About = () => {
                     </div>
                 </div>
                 {/* skills */}
-                <div className='rounded-xl p-3 space-y-5 h-full bg-base-200 hover:shadow-xl hover:shadow-sky-200 duration-500'>
+                <div id="skills" className='rounded-xl p-3 space-y-5 h-full bg-base-200 hover:shadow-xl hover:shadow-sky-200 duration-500'>
                     <h2 className="font-merri font-bold text-xl text-sky-500">Skills</h2>
                     <div className="space-y-2">
                         <p><span className="font-bold">Languages: </span>C, C++, JavaScript.</p>
@@ -36,7 +36,7 @@ const About = () => {
                     </div>
                 </div>
                 {/* Experience */}
-                <div className='rounded-xl p-3 space-y-5 h-full bg-base-200 hover:shadow-xl hover:shadow-sky-200 duration-500'>
+                <div id="experience" className='rounded-xl p-3 space-y-5 h-full bg-base-200 hover:shadow-xl hover:shadow-sky-200 duration-500'>
                     <h2 className="font-merri font-bold text-xl text-sky-500">Experience</h2>
                     <ul className="list-disc list-inside">
                         <li>Fresher.</li>

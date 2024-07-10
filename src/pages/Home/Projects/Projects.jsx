@@ -28,7 +28,7 @@ import { BiLogoGithub } from 'react-icons/bi';
 
 const Projects = () => {
     return (
-        <div className='p-2 md:p-5 font-mont text-black space-y-5'>
+        <div id="projects" className='p-2 md:p-5 font-mont text-black space-y-5'>
             <h1 className="w-fit text-3xl font-bold border-b-2 border-sky-500 font-merri pb-1">Projects</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
                 {/* skillup */}
