@@ -26,11 +26,15 @@ import { TbWorld } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 import { BiLogoGithub } from 'react-icons/bi';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 const Projects = () => {
     return (
-        <div id="projects" className='p-2 md:p-5 font-mont text-black space-y-5 mt-12'>
+        <div data-aos="fade-up" data-aos-duration="1000" id="projects" className='p-2 md:p-5 font-mont text-black space-y-5 mt-12'>
             <h1 className="w-fit text-3xl font-bold border-b-2 border-sky-500 font-merri pb-1">Projects</h1>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-2 lg:gap-4'>
                 {/* skillup */}
                 <div className="relative group h-64 bg-white shadow-lg rounded-lg overflow-hidden">
                     <div className="w-full h-full">

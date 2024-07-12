@@ -5,6 +5,10 @@ import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 import { toast } from "react-toastify";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 const Contact = () => {
 
     const form = useRef();
@@ -30,7 +34,7 @@ const Contact = () => {
         forom.reset();
     };
     return (
-        <div id="contact" className='p-2 md:p-5 font-mont text-black flex flex-col md:flex-row gap-2 items-start justify-between mt-16'>
+        <div data-aos="fade-up" data-aos-duration="1000" id="contact" className='p-2 md:p-5 font-mont text-black flex flex-col md:flex-row gap-2 items-start justify-between mt-16'>
             {/* contact me */}
             <div className="w-full md:w-1/2 lg:w-2/5 h-full bg-base-200 rounded-xl p-3 lg:p-5">
                 <h1 className="font-merri font-bold text-2xl lg:text-3xl">Contact Me</h1>
