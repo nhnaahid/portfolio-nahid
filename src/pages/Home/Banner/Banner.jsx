@@ -15,7 +15,6 @@ import firebase from '../../../assets/icons/firebase.png'
 import node from '../../../assets/icons/node.png'
 import express from '../../../assets/icons/express.png'
 import mongo from '../../../assets/icons/mdb.png'
-import { Link } from 'react-router-dom';
 
 
 const Banner = () => {

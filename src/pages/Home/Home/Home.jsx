@@ -5,10 +5,14 @@ import Banner from "../Banner/Banner";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import Projects from "../Projects/Projects";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     return (
         <div id="home">
+            <Helmet>
+                <title>Portfolio | Nahid</title>
+            </Helmet>
             <Banner></Banner>
             <About></About>
             <Projects></Projects>
