@@ -44,7 +44,7 @@ const Contact = () => {
                 </div>
                 <div className="flex gap-2 justify-start items-center mt-2">
                     <FaPhoneSquareAlt className="text-lg lg:text-xl fill-sky-600" />
-                    <p className="text-xs lg:text-base">+8801734-181559</p>
+                    <p className="text-xs lg:text-base">+8801734-181559 (WhatsApp)</p>
                 </div>
 
                 <div className="w-full flex flex-wrap justify-start gap-3 text-lg mt-5 lg:mt-7">

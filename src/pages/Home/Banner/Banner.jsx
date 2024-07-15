@@ -25,6 +25,7 @@ const Banner = () => {
             targetSection.scrollIntoView({ behavior: "smooth" });
         }
     }
+    
     return (
         <div className='w-full h-screen relative'>
             <div className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-50'></div>
